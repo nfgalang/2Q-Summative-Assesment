@@ -1,0 +1,147 @@
+body {
+width: 1140px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+}
+nav {
+background-color: white;
+margin: -8px -8px -20px -8px;
+}
+h1{
+  font-family: "Fugaz One", sans-serif;
+}
+p{
+  font-family: "Inter", sans-serif;
+  font-size: 15pt;
+}
+a{
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+.secnav{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.secnav a{
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    border-bottom: 4px white solid;
+}
+.secnav a:hover{
+    border-bottom: 4px #479685 solid;
+}
+.maincontent{
+    margin-top: 20px;
+    justify-content: center;
+}
+header{
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20pt;
+  background-color: #008081;
+}
+.bottomcontent img{
+  width: 1140px;
+}
+.frendzmain{
+  display: flex;
+}
+.frendzright{
+background-color: #45ac96;
+padding: 40px 48px;
+}
+.lionmain{
+  display: flex;
+}
+.lionleft{
+background-color: #ed9924;
+padding: 40px 48px;
+}
+table{
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+}
+td{
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th{
+  font-family: "Inter", sans-serif;
+  font-size: 30pt;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+tr{
+   font-family: "Inter", sans-serif;
+    font-size: 30pt;
+}
+.servicetable{
+justify-content: center;
+  text-align: center;
+    margin-top: 50px;
+    margin-top: 50px;
+}
+hr{
+  margin-top: 50px;
+}
+footer{
+  background-color: white;
+  width: 1140px;
+  text-align: center;
+  padding: 25px 1px 25px 1px;
+}
+@media(max-width: 1140px) {
+  body {
+    width: auto;
+  }
+    footer{
+   width: 100%;
+  }
+}
+
+@media(max-width: 1180px){
+    img {
+    width: 100%;
+    }
+    .bottomcontent img {
+    max-width: 100%;
+    }
+     .maincontent {
+    max-width: 1120px;
+  }
+  .touramain {
+    max-width: 1120px;
+    flex-direction: column-reverse;
+  }
+  .tourcmain {
+    max-width: 1120px;
+    flex-direction: column;
+  }
+   .secnav {
+    grid-template-columns: auto auto;
+  }
+}
+@media(max-width: 520px){
+  .secnav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+  }
+  
+}
